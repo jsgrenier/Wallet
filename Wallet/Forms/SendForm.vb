@@ -105,6 +105,7 @@ Public Class SendForm
                                                                LoadingControl1.Visible = False
                                                                LabelTransaction.ForeColor = Color.FromArgb(167, 209, 74)
                                                                LabelTransaction.Text = response("message").ToString()
+                                                               TextBox1.Text = response("txId").ToString()
                                                                BtnSend.Enabled = True ' Re-enable the button
                                                                UpdateTokensOwned()
                                                            End Sub)

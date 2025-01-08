@@ -40,6 +40,7 @@ Partial Class SendForm
         Me.TBPublicAddress = New System.Windows.Forms.TextBox()
         Me.MainFlowPanel = New DevExpress.XtraEditors.XtraScrollableControl()
         Me.tim = New System.Windows.Forms.Timer(Me.components)
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GeneralPanel.SuspendLayout()
         Me.PanelPublicAddress.SuspendLayout()
         CType(Me.CopyPublicAddress, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +51,7 @@ Partial Class SendForm
         Me.GeneralPanel.BackColor = System.Drawing.Color.Transparent
         Me.GeneralPanel.BorderColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(25, Byte), Integer))
         Me.GeneralPanel.BorderRadius = 10
+        Me.GeneralPanel.Controls.Add(Me.TextBox1)
         Me.GeneralPanel.Controls.Add(Me.LabelTransaction)
         Me.GeneralPanel.Controls.Add(Me.TBAmount)
         Me.GeneralPanel.Controls.Add(Me.LoadingControl1)
@@ -290,6 +292,13 @@ Partial Class SendForm
         'tim
         '
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(280, 49)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(299, 27)
+        Me.TextBox1.TabIndex = 24
+        '
         'SendForm
         '
         Me.Appearance.ForeColor = System.Drawing.Color.White
@@ -328,4 +337,5 @@ Partial Class SendForm
     Friend WithEvents tim As Timer
     Friend WithEvents TBAmount As NumericTextbox
     Friend WithEvents LabelTransaction As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

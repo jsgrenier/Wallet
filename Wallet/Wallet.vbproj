@@ -139,6 +139,12 @@
     <Compile Include="Dialogs\PasswordForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\ConfirmationForm.Designer.vb">
+      <DependentUpon>ConfirmationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConfirmationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\CreateTokenForm.Designer.vb">
       <DependentUpon>CreateTokenForm.vb</DependentUpon>
     </Compile>
@@ -203,6 +209,9 @@
     <EmbeddedResource Include="Dialogs\PasswordForm.resx">
       <DependentUpon>PasswordForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CreateTokenForm.resx">
       <DependentUpon>CreateTokenForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -265,6 +274,7 @@
     <Content Include="Lib\DevExpress.Utils.v24.1.dll" />
     <Content Include="Lib\DevExpress.XtraBars.v24.1.dll" />
     <Content Include="Lib\DevExpress.XtraEditors.v24.1.dll" />
+    <None Include="Resources\successIcon.png" />
     <Content Include="wallet_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

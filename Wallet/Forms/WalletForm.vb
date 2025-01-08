@@ -85,4 +85,9 @@ Public Class WalletForm
             OpenChildFormContentPanel(New CreateTokenForm(_privateAddress))
         End If
     End Sub
+
+    Public Sub ConfirmTx(txID As String)
+        OpenChildFormContentPanel(New ConfirmationForm(txID))
+
+    End Sub
 End Class
